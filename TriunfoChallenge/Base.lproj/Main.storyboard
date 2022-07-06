@@ -150,30 +150,47 @@
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qZS-4V-XYG">
                                                                     <rect key="frame" x="0.0" y="0.0" width="251" height="114"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xbu-Ej-m6Q">
-                                                                <rect key="frame" x="16" y="114" width="251" height="114"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="i0r-js-Ygr">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="251" height="114"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="42x-w1-Gcj">
-                                                                <rect key="frame" x="16" y="228" width="251" height="114"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gsh-Go-04N">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="251" height="114"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vbp-Mm-ky1">
-                                                                <rect key="frame" x="283" y="0.0" width="251" height="114"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="A20-py-TT0">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="251" height="114"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ppf-bF-2Ph">
+                                                                            <rect key="frame" x="0.0" y="12" width="55" height="90"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="ppf-bF-2Ph" secondAttribute="height" multiplier="11:18" id="rJc-UG-Gi2"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ukk-ug-Ddi">
+                                                                            <rect key="frame" x="71" y="20" width="180" height="82"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-Pn-slh">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="20.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gfh-UB-Tiy">
+                                                                                    <rect key="frame" x="0.0" y="28.5" width="180" height="53.5"/>
+                                                                                    <subviews>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="&lt;dateLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suS-fq-41L">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="20.5"/>
+                                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                        </label>
+                                                                                    </subviews>
+                                                                                </stackView>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="Ukk-ug-Ddi" firstAttribute="leading" secondItem="ppf-bF-2Ph" secondAttribute="trailing" constant="16" id="DpF-eg-5AH"/>
+                                                                        <constraint firstItem="ppf-bF-2Ph" firstAttribute="top" secondItem="qZS-4V-XYG" secondAttribute="top" constant="12" id="I2N-xY-hiG"/>
+                                                                        <constraint firstItem="ppf-bF-2Ph" firstAttribute="leading" secondItem="qZS-4V-XYG" secondAttribute="leading" id="Tes-wd-Ywt"/>
+                                                                        <constraint firstItem="Ukk-ug-Ddi" firstAttribute="top" secondItem="qZS-4V-XYG" secondAttribute="top" constant="20" id="ar5-Yy-Tje"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="Ukk-ug-Ddi" secondAttribute="bottom" constant="12" id="egj-J2-NlL"/>
+                                                                        <constraint firstItem="Ukk-ug-Ddi" firstAttribute="leading" secondItem="ppf-bF-2Ph" secondAttribute="trailing" constant="16" id="hB8-lN-FPz"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="ppf-bF-2Ph" secondAttribute="bottom" constant="12" id="n4a-J4-moV"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Ukk-ug-Ddi" secondAttribute="trailing" id="rla-rT-ySu"/>
+                                                                        <constraint firstItem="ppf-bF-2Ph" firstAttribute="leading" secondItem="qZS-4V-XYG" secondAttribute="leading" id="zbI-YO-CHV"/>
+                                                                    </constraints>
                                                                 </collectionViewCellContentView>
                                                             </collectionViewCell>
                                                         </cells>
@@ -309,6 +326,9 @@
         <image name="film.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
