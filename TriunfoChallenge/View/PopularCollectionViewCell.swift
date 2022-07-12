@@ -7,7 +7,7 @@
 
 import UIKit
 
-class popularCollectionViewCell: UICollectionViewCell {
+class PopularCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var image: UIImageView!
     @IBOutlet var titleLabel: UILabel!

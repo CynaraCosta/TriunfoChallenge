@@ -9,29 +9,26 @@ import UIKit
 
 class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    let popularMovies = Movie.popularMovies()
+    let nowPlayingsMovies = Movie.nowPlayingMovies()
+    let upcomingMovies = Movie.upcomingMovies()
+    
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var nowPlayingCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = self.view.bounds
+        gradient.colors = [UIColor(named: "purple1")?.cgColor, UIColor(named: "purple2")?.cgColor]
+        self.view.layer.insertSublayer(gradient, at: 0)
+        
         popularCollectionView.dataSource = self
         popularCollectionView.delegate = self
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? popularCollectionViewCell
         
-        cell?.titleLabel.text = "Título do filme"
-        cell?.image.image = UIImage()
-        cell?.image.backgroundColor = .red
-        
-        return cell ?? UICollectionViewCell() // se cell n existir, retorna uicollectionviewcell
+        nowPlayingCollectionView.dataSource = self
+        nowPlayingCollectionView.delegate = self
     }
-
-
 }
 
