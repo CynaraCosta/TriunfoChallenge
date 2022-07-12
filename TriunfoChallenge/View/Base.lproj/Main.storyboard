@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYk-RF-jkb">
-                                <rect key="frame" x="0.0" y="140" width="414" height="982"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="970"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TNh-hs-FAT">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="987"/>
@@ -33,15 +34,25 @@
                                                                 <rect key="frame" x="16" y="0.0" width="382" height="50"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtr-wS-iPg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="321" height="50"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQp-RD-ZpT">
-                                                                        <rect key="frame" x="315" y="0.0" width="67" height="50"/>
+                                                                        <rect key="frame" x="322" y="0.0" width="60" height="50"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                                                        <buttonConfiguration key="configuration" style="plain">
+                                                                            <attributedString key="attributedTitle">
+                                                                                <fragment content="See all">
+                                                                                    <attributes>
+                                                                                        <font key="NSFont" size="12" name="Quicksand-SemiBold"/>
+                                                                                    </attributes>
+                                                                                </fragment>
+                                                                            </attributedString>
+                                                                        </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -114,15 +125,24 @@
                                                                 <rect key="frame" x="16" y="0.0" width="382" height="50"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Now Playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze4-BF-pX5">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="321" height="50"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxZ-lC-z3s">
-                                                                        <rect key="frame" x="315" y="0.0" width="67" height="50"/>
+                                                                        <rect key="frame" x="322" y="0.0" width="60" height="50"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                                                        <buttonConfiguration key="configuration" style="plain">
+                                                                            <attributedString key="attributedTitle">
+                                                                                <fragment content="See all">
+                                                                                    <attributes>
+                                                                                        <font key="NSFont" size="12" name="Quicksand-SemiBold"/>
+                                                                                    </attributes>
+                                                                                </fragment>
+                                                                            </attributedString>
+                                                                        </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -216,15 +236,24 @@
                                                                 <rect key="frame" x="16" y="0.0" width="382" height="50"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Upcoming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyr-hx-zhl">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="321" height="50"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ba-xe-Zmn">
-                                                                        <rect key="frame" x="315" y="0.0" width="67" height="50"/>
+                                                                        <rect key="frame" x="322" y="0.0" width="60" height="50"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                                                        <buttonConfiguration key="configuration" style="plain">
+                                                                            <attributedString key="attributedTitle">
+                                                                                <fragment content="See all">
+                                                                                    <attributes>
+                                                                                        <font key="NSFont" size="12" name="Quicksand-SemiBold"/>
+                                                                                    </attributes>
+                                                                                </fragment>
+                                                                            </attributedString>
+                                                                        </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -325,8 +354,14 @@
                     <size key="freeformSize" width="414" height="1205"/>
                     <connections>
                         <outlet property="UpcomingCollectionView" destination="CFv-hG-JRv" id="xYC-S5-yST"/>
+                        <outlet property="nowPlayingButton" destination="RxZ-lC-z3s" id="kEY-2T-qHx"/>
                         <outlet property="nowPlayingCollectionView" destination="DVo-3z-AfV" id="ASm-Wh-hO5"/>
+                        <outlet property="nowPlayingTitle" destination="ze4-BF-pX5" id="kSY-9y-Vhj"/>
+                        <outlet property="popularButton" destination="eQp-RD-ZpT" id="7u4-CZ-liP"/>
                         <outlet property="popularCollectionView" destination="t7A-HD-BPM" id="5bF-UR-19g"/>
+                        <outlet property="popularTitle" destination="gtr-wS-iPg" id="f40-br-QWN"/>
+                        <outlet property="upcomingButton" destination="1Ba-xe-Zmn" id="icg-HS-dEj"/>
+                        <outlet property="upcomingTitle" destination="Gyr-hx-zhl" id="MmS-xk-x1u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -342,6 +377,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="secondBlack"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="cpR-BA-7KR" kind="relationship" relationship="viewControllers" id="FrW-ir-ULQ"/>
@@ -358,8 +396,19 @@
                     <tabBarItem key="tabBarItem" title="Featured" image="film" catalog="system" selectedImage="film.fill" id="nLd-OM-KFJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="CLl-GW-4tk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="secondBlack"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="64"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -374,6 +423,9 @@
     <resources>
         <image name="film" catalog="system" width="128" height="93"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
+        <namedColor name="secondBlack">
+            <color red="0.039000000804662704" green="0.030999999493360519" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

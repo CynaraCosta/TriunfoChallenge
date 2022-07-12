@@ -12,4 +12,8 @@ class PopularCollectionViewCell: UICollectionViewCell {
     @IBOutlet var image: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     
+    override func layoutSubviews() {
+        titleLabel.font = UIFont(name: "Quicksand-Regular", size: 16)
+    }
+    
 }

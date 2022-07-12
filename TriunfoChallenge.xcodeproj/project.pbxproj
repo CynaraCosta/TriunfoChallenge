@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A455062A287E06F200AC3FE2 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4550629287E06F200AC3FE2 /* Quicksand-SemiBold.ttf */; };
 		A4ED4CCD28731C9000481812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCC28731C9000481812 /* AppDelegate.swift */; };
 		A4ED4CCF28731C9000481812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCE28731C9000481812 /* SceneDelegate.swift */; };
 		A4ED4CD128731C9000481812 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CD028731C9000481812 /* FeaturedViewController.swift */; };
@@ -23,9 +24,14 @@
 		A4ED4D3B287DA4B000481812 /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D36287DA4B000481812 /* Movie+Popular.swift */; };
 		A4ED4D3D287DBE3300481812 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D3C287DBE3300481812 /* UpcomingCollectionViewCell.swift */; };
 		A4ED4D3F287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D3E287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift */; };
+		A4ED4D52287DF42E00481812 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4ED4D4E287DF42E00481812 /* Oswald-Medium.ttf */; };
+		A4ED4D53287DF42E00481812 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4ED4D4F287DF42E00481812 /* Quicksand-Regular.ttf */; };
+		A4ED4D54287DF42E00481812 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4ED4D50287DF42E00481812 /* Quicksand-Medium.ttf */; };
+		A4ED4D55287DF42E00481812 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4ED4D51287DF42E00481812 /* Oswald-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4550629287E06F200AC3FE2 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		A4ED4CC928731C9000481812 /* TriunfoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriunfoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ED4CCC28731C9000481812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4ED4CCE28731C9000481812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +50,10 @@
 		A4ED4D36287DA4B000481812 /* Movie+Popular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
 		A4ED4D3C287DBE3300481812 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4ED4D3E287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		A4ED4D4E287DF42E00481812 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
+		A4ED4D4F287DF42E00481812 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		A4ED4D50287DF42E00481812 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		A4ED4D51287DF42E00481812 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 		A4ED4CCB28731C9000481812 /* TriunfoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A4ED4D4D287DF41700481812 /* Fonts */,
 				A4ED4CCC28731C9000481812 /* AppDelegate.swift */,
 				A4ED4CCE28731C9000481812 /* SceneDelegate.swift */,
 				A4ED4D31287D960200481812 /* Model */,
@@ -127,6 +138,18 @@
 				A4ED4D2F287D95FA00481812 /* Movie.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A4ED4D4D287DF41700481812 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4ED4D4E287DF42E00481812 /* Oswald-Medium.ttf */,
+				A4ED4D51287DF42E00481812 /* Oswald-Regular.ttf */,
+				A4ED4D50287DF42E00481812 /* Quicksand-Medium.ttf */,
+				A4550629287E06F200AC3FE2 /* Quicksand-SemiBold.ttf */,
+				A4ED4D4F287DF42E00481812 /* Quicksand-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4ED4CD928731C9300481812 /* LaunchScreen.storyboard in Resources */,
+				A455062A287E06F200AC3FE2 /* Quicksand-SemiBold.ttf in Resources */,
+				A4ED4D52287DF42E00481812 /* Oswald-Medium.ttf in Resources */,
 				A4ED4CD628731C9300481812 /* Assets.xcassets in Resources */,
+				A4ED4D55287DF42E00481812 /* Oswald-Regular.ttf in Resources */,
 				A4ED4CD428731C9000481812 /* Main.storyboard in Resources */,
+				A4ED4D53287DF42E00481812 /* Quicksand-Regular.ttf in Resources */,
+				A4ED4D54287DF42E00481812 /* Quicksand-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +390,7 @@
 				DEVELOPMENT_TEAM = 9YF48LKAWG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TriunfoChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ludi;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -390,6 +419,7 @@
 				DEVELOPMENT_TEAM = 9YF48LKAWG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TriunfoChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ludi;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

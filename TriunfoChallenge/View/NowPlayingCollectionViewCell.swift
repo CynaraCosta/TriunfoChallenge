@@ -13,4 +13,11 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     
+    override func layoutSubviews() {
+        titleLabel.font = UIFont(name: "Quicksand-Regular", size: 16)
+        dateLabel.font = UIFont(name: "Quicksand-Regular", size: 16)
+    }
+    
+    
+    
 }

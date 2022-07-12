@@ -16,9 +16,18 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var nowPlayingCollectionView: UICollectionView!
     @IBOutlet weak var UpcomingCollectionView: UICollectionView!
+        
+    @IBOutlet var popularTitle: UILabel!
+    @IBOutlet var popularButton: UIButton!
+    @IBOutlet var nowPlayingTitle: UILabel!
+    @IBOutlet var nowPlayingButton: UIButton!
+    @IBOutlet var upcomingTitle: UILabel!
+    @IBOutlet var upcomingButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        navigationItem.titleView = UIImageView()
         
         let gradient = CAGradientLayer()
         gradient.frame = self.view.bounds
@@ -33,6 +42,23 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
         
         UpcomingCollectionView.delegate = self
         UpcomingCollectionView.dataSource = self
+        
+        popularTitle.font = UIFont(name: "Quicksand-SemiBold", size: 24)
+        nowPlayingTitle.font = UIFont(name: "Quicksand-SemiBold", size: 24)
+        upcomingTitle.font = UIFont(name: "Quicksand-SemiBold", size: 24)
+        
+        popularButton.titleLabel!.font = UIFont(name: "Quicksand-SemiBold", size: 14)
+        nowPlayingButton.titleLabel!.font = UIFont(name: "Quicksand-SemiBold", size: 14)
+        upcomingButton.titleLabel!.font = UIFont(name: "Quicksand-SemiBold", size: 14)
+
+        popularButton.layer.cornerRadius = 14.0
+        popularButton.backgroundColor = UIColor(named: "purple2")
+                
+        nowPlayingButton.backgroundColor = UIColor(named: "purple2")
+        nowPlayingButton.layer.cornerRadius = 16.0
+        
+        upcomingButton.backgroundColor = UIColor(named: "purple2")
+        upcomingButton.layer.cornerRadius = 16.0
         
     }
 }
