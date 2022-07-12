@@ -15,6 +15,7 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var nowPlayingCollectionView: UICollectionView!
+    @IBOutlet weak var UpcomingCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,10 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
         
         nowPlayingCollectionView.dataSource = self
         nowPlayingCollectionView.delegate = self
+        
+        UpcomingCollectionView.delegate = self
+        UpcomingCollectionView.dataSource = self
+        
     }
 }
 
