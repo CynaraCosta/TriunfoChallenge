@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A455062A287E06F200AC3FE2 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4550629287E06F200AC3FE2 /* Quicksand-SemiBold.ttf */; };
+		A455062C287EF20500AC3FE2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455062B287EF20500AC3FE2 /* DetailsViewController.swift */; };
+		A455062E287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455062D287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift */; };
 		A4ED4CCD28731C9000481812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCC28731C9000481812 /* AppDelegate.swift */; };
 		A4ED4CCF28731C9000481812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCE28731C9000481812 /* SceneDelegate.swift */; };
 		A4ED4CD128731C9000481812 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CD028731C9000481812 /* FeaturedViewController.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		A4550629287E06F200AC3FE2 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		A455062B287EF20500AC3FE2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A455062D287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		A4ED4CC928731C9000481812 /* TriunfoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriunfoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ED4CCC28731C9000481812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4ED4CCE28731C9000481812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,9 +90,9 @@
 		A4ED4CCB28731C9000481812 /* TriunfoChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				A4ED4D4D287DF41700481812 /* Fonts */,
 				A4ED4CCC28731C9000481812 /* AppDelegate.swift */,
 				A4ED4CCE28731C9000481812 /* SceneDelegate.swift */,
+				A4ED4D4D287DF41700481812 /* Fonts */,
 				A4ED4D31287D960200481812 /* Model */,
 				A4ED4D2A287C488600481812 /* SupportingFiles */,
 				A4ED4D28287C46EE00481812 /* Controllers */,
@@ -102,6 +106,8 @@
 			children = (
 				A4ED4CD028731C9000481812 /* FeaturedViewController.swift */,
 				A4ED4D3E287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift */,
+				A455062B287EF20500AC3FE2 /* DetailsViewController.swift */,
+				A455062D287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +245,8 @@
 				A4ED4D30287D95FA00481812 /* Movie.swift in Sources */,
 				A4ED4D38287DA4B000481812 /* Movie+NowPlaying.swift in Sources */,
 				A4ED4D27287C466D00481812 /* NowPlayingCollectionViewCell.swift in Sources */,
+				A455062E287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
+				A455062C287EF20500AC3FE2 /* DetailsViewController.swift in Sources */,
 				A4ED4CCD28731C9000481812 /* AppDelegate.swift in Sources */,
 				A4ED4CCF28731C9000481812 /* SceneDelegate.swift in Sources */,
 			);

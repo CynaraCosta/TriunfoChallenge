@@ -7,11 +7,20 @@
 
 import UIKit
 
-class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class FeaturedViewController: UIViewController {
     
     let popularMovies = Movie.popularMovies()
     let nowPlayingsMovies = Movie.nowPlayingMovies()
     let upcomingMovies = Movie.upcomingMovies()
+    
+    private let stackTitle: UIStackView = {
+        let stackTitle = UIStackView()
+        stackTitle.axis = NSLayoutConstraint.Axis.horizontal
+        stackTitle.distribution  = UIStackView.Distribution.equalSpacing
+        stackTitle.alignment = UIStackView.Alignment.center
+        stackTitle.spacing  = 8.0
+        return stackTitle
+    }()
     
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var nowPlayingCollectionView: UICollectionView!
@@ -27,11 +36,9 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        navigationItem.titleView = UIImageView()
-        
         let gradient = CAGradientLayer()
         gradient.frame = self.view.bounds
-        gradient.colors = [UIColor(named: "purple1")?.cgColor, UIColor(named: "purple2")?.cgColor]
+        gradient.colors = [UIColor(named: "purple4")?.cgColor, UIColor(named: "purple3")?.cgColor]
         self.view.layer.insertSublayer(gradient, at: 0)
         
         popularCollectionView.dataSource = self
@@ -60,6 +67,60 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
         upcomingButton.backgroundColor = UIColor(named: "purple2")
         upcomingButton.layer.cornerRadius = 16.0
         
+        let kit = addStack()
+        let logoImage: UIImageView = kit.0
+        let titleLudi: UILabel = kit.1
+        
+        stackTitle.addArrangedSubview(logoImage)
+        stackTitle.addArrangedSubview(titleLudi)
+        
+        navigationItem.titleView = stackTitle
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Oswald-Regular", size: 48)!, NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        // Autolayout
+        
+        stackTitle.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            stackTitle.heightAnchor.constraint(equalToConstant: 40.0),
+        ])
+        
+        logoImage.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            logoImage.widthAnchor.constraint(equalToConstant: 34),
+        ])
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailsViewController {
+            let movie = sender as? Movie
+            destination.movie = movie
+        }
+    }
+    
+    func addStack() -> (UIImageView, UILabel, UIStackView){
+        let logoImage: UIImageView
+        let image = UIImage(named: "logo")
+        logoImage = UIImageView(image: image)
+        logoImage.contentMode = .scaleAspectFit
+
+        
+        let titleLudi: UILabel
+        titleLudi = UILabel()
+        titleLudi.textColor = .white
+        titleLudi.text = "Ludi"
+        titleLudi.font = UIFont(name: "Oswald-Medium", size: 24)
+
+        
+        let stackTitle: UIStackView
+        stackTitle = UIStackView()
+        stackTitle.axis = NSLayoutConstraint.Axis.horizontal
+        stackTitle.distribution  = UIStackView.Distribution.equalSpacing
+        //stackTitle.alignment = UIStackView.Alignment.center
+        stackTitle.spacing  = 8.0
+        
+        return (logoImage, titleLudi, stackTitle)
+    }
+    
 }
 
