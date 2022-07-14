@@ -20,10 +20,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let gradient = CAGradientLayer()
-        gradient.frame = self.view.bounds
-        gradient.colors = [UIColor(named: "purple4")?.cgColor, UIColor(named: "purple3")?.cgColor]
-        self.view.layer.insertSublayer(gradient, at: 0)
+        setBackground()
         
         guard let movie = movie else {
             return
