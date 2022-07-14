@@ -13,13 +13,15 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel2
     
     func setup(title: String, image: UIImage, date: String){
         titleLabel.text = title
         imageView.image = image
         let year: String = String(date.prefix(4))
         dateLabel.text = year
+        imageView.layer.cornerRadius = 10
+        imageView.layer.masksToBounds = true
     }
     
     override func layoutSubviews() {

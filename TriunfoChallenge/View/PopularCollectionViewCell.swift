@@ -17,6 +17,9 @@ class PopularCollectionViewCell: UICollectionViewCell {
     func setup(title: String, image: UIImage){
         titleLabel.text = title
         imageView.image = image
+        imageView.layer.cornerRadius = 12
+        imageView.layer.masksToBounds = true
+
     }
     
     override func layoutSubviews() {

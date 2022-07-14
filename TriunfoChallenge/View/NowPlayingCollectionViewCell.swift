@@ -21,6 +21,8 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
         imageView.image = image
         let year: String = String(date.prefix(4))
         dateLabel.text = year
+        imageView.layer.cornerRadius = 12
+        imageView.layer.masksToBounds = true
     }
     
     override func layoutSubviews() {
