@@ -13,7 +13,7 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var dateLabel: UILabel2
+    @IBOutlet var dateLabel: UILabel!
     
     func setup(title: String, image: UIImage, date: String){
         titleLabel.text = title

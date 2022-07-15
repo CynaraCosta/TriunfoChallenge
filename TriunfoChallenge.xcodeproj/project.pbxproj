@@ -13,6 +13,8 @@
 		A455063028809FFD00AC3FE2 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455062F28809FFD00AC3FE2 /* TrendingViewController.swift */; };
 		A45506322880A0FE00AC3FE2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45506312880A0FE00AC3FE2 /* SearchViewController.swift */; };
 		A45506342880A15000AC3FE2 /* UIViewController+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45506332880A15000AC3FE2 /* UIViewController+Background.swift */; };
+		A45506362881974C00AC3FE2 /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A45506352881974C00AC3FE2 /* TMDB-Info.plist */; };
+		A455063A28819D9100AC3FE2 /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455063928819D9100AC3FE2 /* Movie+API.swift */; };
 		A4ED4CCD28731C9000481812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCC28731C9000481812 /* AppDelegate.swift */; };
 		A4ED4CCF28731C9000481812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCE28731C9000481812 /* SceneDelegate.swift */; };
 		A4ED4CD128731C9000481812 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CD028731C9000481812 /* FeaturedViewController.swift */; };
@@ -42,6 +44,8 @@
 		A455062F28809FFD00AC3FE2 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		A45506312880A0FE00AC3FE2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A45506332880A15000AC3FE2 /* UIViewController+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Background.swift"; sourceTree = "<group>"; };
+		A45506352881974C00AC3FE2 /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
+		A455063928819D9100AC3FE2 /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+API.swift"; path = "../../../../Downloads/Movie+API.swift"; sourceTree = "<group>"; };
 		A4ED4CC928731C9000481812 /* TriunfoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriunfoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ED4CCC28731C9000481812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4ED4CCE28731C9000481812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 			children = (
 				A4ED4CDA28731C9300481812 /* Info.plist */,
 				A4ED4CD528731C9300481812 /* Assets.xcassets */,
+				A45506352881974C00AC3FE2 /* TMDB-Info.plist */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		A4ED4D31287D960200481812 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A455063928819D9100AC3FE2 /* Movie+API.swift */,
 				A4ED4D33287DA4B000481812 /* Movie+NowPlaying.swift */,
 				A4ED4D36287DA4B000481812 /* Movie+Popular.swift */,
 				A4ED4D34287DA4B000481812 /* Movie+TrendingThisWeek.swift */,
@@ -230,6 +236,7 @@
 				A4ED4D52287DF42E00481812 /* Oswald-Medium.ttf in Resources */,
 				A4ED4CD628731C9300481812 /* Assets.xcassets in Resources */,
 				A4ED4D55287DF42E00481812 /* Oswald-Regular.ttf in Resources */,
+				A45506362881974C00AC3FE2 /* TMDB-Info.plist in Resources */,
 				A4ED4CD428731C9000481812 /* Main.storyboard in Resources */,
 				A4ED4D53287DF42E00481812 /* Quicksand-Regular.ttf in Resources */,
 				A4ED4D54287DF42E00481812 /* Quicksand-Medium.ttf in Resources */,
@@ -259,6 +266,7 @@
 				A4ED4D27287C466D00481812 /* NowPlayingCollectionViewCell.swift in Sources */,
 				A455062E287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				A455062C287EF20500AC3FE2 /* DetailsViewController.swift in Sources */,
+				A455063A28819D9100AC3FE2 /* Movie+API.swift in Sources */,
 				A4ED4CCD28731C9000481812 /* AppDelegate.swift in Sources */,
 				A4ED4CCF28731C9000481812 /* SceneDelegate.swift in Sources */,
 			);
