@@ -9,7 +9,7 @@ import UIKit
 
 class FeaturedViewController: UIViewController {
     
-    let popularMovies = Movie.popularMovies()
+    var popularMovies: [Movie] = []
     let nowPlayingsMovies = Movie.nowPlayingMovies()
     let upcomingMovies = Movie.upcomingMovies()
     
@@ -46,6 +46,11 @@ class FeaturedViewController: UIViewController {
         
         UpcomingCollectionView.delegate = self
         UpcomingCollectionView.dataSource = self
+        
+        Task {
+            self.popularMovies = await Movie.popularMoviesAPI()
+            self.popularCollectionView.reloadData()
+        }
         
         popularTitle.font = UIFont(name: "Quicksand-SemiBold", size: 24)
         nowPlayingTitle.font = UIFont(name: "Quicksand-SemiBold", size: 24)

@@ -15,6 +15,7 @@
 		A45506342880A15000AC3FE2 /* UIViewController+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45506332880A15000AC3FE2 /* UIViewController+Background.swift */; };
 		A45506362881974C00AC3FE2 /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A45506352881974C00AC3FE2 /* TMDB-Info.plist */; };
 		A455063A28819D9100AC3FE2 /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455063928819D9100AC3FE2 /* Movie+API.swift */; };
+		A455063C2881AE8700AC3FE2 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455063B2881AE8700AC3FE2 /* MovieResponse.swift */; };
 		A4ED4CCD28731C9000481812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCC28731C9000481812 /* AppDelegate.swift */; };
 		A4ED4CCF28731C9000481812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCE28731C9000481812 /* SceneDelegate.swift */; };
 		A4ED4CD128731C9000481812 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CD028731C9000481812 /* FeaturedViewController.swift */; };
@@ -46,6 +47,7 @@
 		A45506332880A15000AC3FE2 /* UIViewController+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Background.swift"; sourceTree = "<group>"; };
 		A45506352881974C00AC3FE2 /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
 		A455063928819D9100AC3FE2 /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+API.swift"; path = "../../../../Downloads/Movie+API.swift"; sourceTree = "<group>"; };
+		A455063B2881AE8700AC3FE2 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		A4ED4CC928731C9000481812 /* TriunfoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriunfoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ED4CCC28731C9000481812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4ED4CCE28731C9000481812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				A4ED4D35287DA4B000481812 /* Movie+TrendingToday.swift */,
 				A4ED4D32287DA4B000481812 /* Movie+Upcoming.swift */,
 				A4ED4D2F287D95FA00481812 /* Movie.swift */,
+				A455063B2881AE8700AC3FE2 /* MovieResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4ED4D3D287DBE3300481812 /* UpcomingCollectionViewCell.swift in Sources */,
+				A455063C2881AE8700AC3FE2 /* MovieResponse.swift in Sources */,
 				A455063028809FFD00AC3FE2 /* TrendingViewController.swift in Sources */,
 				A4ED4D37287DA4B000481812 /* Movie+Upcoming.swift in Sources */,
 				A45506322880A0FE00AC3FE2 /* SearchViewController.swift in Sources */,

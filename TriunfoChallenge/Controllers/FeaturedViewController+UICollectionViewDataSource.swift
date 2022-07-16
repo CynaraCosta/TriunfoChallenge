@@ -32,7 +32,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
     fileprivate func makePopularCell(_ indexPath: IndexPath) -> PopularCollectionViewCell {
         let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.identifier, for: indexPath) as? PopularCollectionViewCell
         
-        cell?.setup(title: popularMovies[indexPath.item].title, image: UIImage(named: popularMovies[indexPath.item].backdrop) ?? UIImage())
+        cell?.setup(title: popularMovies[indexPath.item].title, image: UIImage(named: popularMovies[indexPath.item].backdropPath) ?? UIImage())
         
         return cell ?? PopularCollectionViewCell() // se cell n existir, retorna uicollectionviewcell
     }
@@ -40,7 +40,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
     fileprivate func makeNowPlayingCell(_ indexPath: IndexPath) -> NowPlayingCollectionViewCell {
         let cell = nowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.identifier, for: indexPath) as? NowPlayingCollectionViewCell
         
-        cell?.setup(title: nowPlayingsMovies[indexPath.item].title, image: UIImage(named: nowPlayingsMovies[indexPath.item].poster) ?? UIImage(), date: nowPlayingsMovies[indexPath.item].releaseDate)
+        cell?.setup(title: nowPlayingsMovies[indexPath.item].title, image: UIImage(named: nowPlayingsMovies[indexPath.item].posterPath) ?? UIImage(), date: nowPlayingsMovies[indexPath.item].releaseDate)
         
         return cell ?? NowPlayingCollectionViewCell()
     }
@@ -48,7 +48,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
     fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
         let cell = UpcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.identifier, for: indexPath) as? UpcomingCollectionViewCell
         
-        cell?.setup(title: upcomingMovies[indexPath.item].title, image: UIImage(named: upcomingMovies[indexPath.item].poster) ?? UIImage(), date: upcomingMovies[indexPath.item].releaseDate)
+        cell?.setup(title: upcomingMovies[indexPath.item].title, image: UIImage(named: upcomingMovies[indexPath.item].posterPath) ?? UIImage(), date: upcomingMovies[indexPath.item].releaseDate)
         
         return cell ?? UpcomingCollectionViewCell()
     }
