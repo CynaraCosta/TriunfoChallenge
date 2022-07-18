@@ -10,8 +10,8 @@ import UIKit
 class FeaturedViewController: UIViewController {
     
     var popularMovies: [Movie] = []
-    let nowPlayingsMovies = Movie.nowPlayingMovies()
-    let upcomingMovies = Movie.upcomingMovies()
+    var nowPlayingsMovies: [Movie] = []
+    var upcomingMovies: [Movie] = []
     
     private let stackTitle: UIStackView = {
         let stackTitle = UIStackView()
@@ -50,6 +50,16 @@ class FeaturedViewController: UIViewController {
         Task {
             self.popularMovies = await Movie.popularMoviesAPI()
             self.popularCollectionView.reloadData()
+        }
+        
+        Task {
+            self.nowPlayingsMovies = await Movie.nowPlayingMoviesAPI()
+            self.nowPlayingCollectionView.reloadData()
+        }
+        
+        Task {
+            self.upcomingMovies = await Movie.upcomingMoviesAPI()
+            self.UpcomingCollectionView.reloadData()
         }
         
         popularTitle.font = UIFont(name: "Quicksand-SemiBold", size: 24)

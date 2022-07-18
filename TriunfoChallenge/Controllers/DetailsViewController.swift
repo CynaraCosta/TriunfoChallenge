@@ -18,6 +18,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet var overviewLabel: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         setBackground()
@@ -33,5 +34,15 @@ class DetailsViewController: UIViewController {
         self.posterImage.image = UIImage(named: movie.posterPath)
         self.overviewLabel.text = movie.overview
         
+        Task {
+            let backdropURL = await Movie.dowloadImageData(withPath: movie.backdropPath)
+            let backdrop = UIImage(data: backdropURL) ?? UIImage()
+            self.backdropImage.image = backdrop
+            
+            let posterURL = await Movie.dowloadImageData(withPath: movie.posterPath)
+            let poster = UIImage(data: posterURL) ?? UIImage()
+            self.posterImage.image = poster
+            
+        }
     }
 }
