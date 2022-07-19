@@ -28,6 +28,7 @@ class SearchViewController: UIViewController {
         searchField.leftViewMode = .always
       }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let imageLeft = UIImage(named: "Fill")
@@ -35,11 +36,8 @@ class SearchViewController: UIViewController {
         
         tableViewSearch.delegate = self
         tableViewSearch.dataSource = self
-        
-        Task{
-            self.searchedMovies = await Movie.searchMovie(title: searchField.text ?? "The avengers")
-            self.tableViewSearch.reloadData()
-        }
+        searchField.delegate = self
+        searchField.returnKeyType = .done
         
         setBackground()
     }
@@ -51,4 +49,15 @@ class SearchViewController: UIViewController {
         }
     }
 
+}
+
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        Task{
+            self.searchedMovies = await Movie.searchMovie(title: searchField.text ?? "")
+            self.tableViewSearch.reloadData()
+        }
+        return true
+    }
 }

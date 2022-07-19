@@ -37,9 +37,13 @@ extension FeaturedViewController: UICollectionViewDataSource {
         cell?.setup(title: movie.title, image: UIImage())
         
         Task {
-            let imageDate = await Movie.dowloadImageData(withPath: movie.backdropPath)
-            let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
-            cell?.setup(title: movie.title, image: imagem)
+            if let backdropDesemp = movie.backdropPath {
+                let imageDate = await Movie.dowloadImageData(withPath: backdropDesemp)
+                let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
+                cell?.setup(title: movie.title, image: imagem)
+            } else {
+                cell?.setup(title: movie.title, image: UIImage())
+            }
         }
         
         return cell ?? PopularCollectionViewCell() // se cell n existir, retorna uicollectionviewcell
@@ -52,12 +56,12 @@ extension FeaturedViewController: UICollectionViewDataSource {
         
         let movie = nowPlayingsMovies[indexPath.item]
         
-        cell?.setup(title: movie.title, image: UIImage(), date: movie.releaseDate)
+        cell?.setup(title: movie.title, image: UIImage(), date: movie.releaseDate!)
         
         Task {
             let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
             let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
-            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate)
+            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
         }
         
         return cell ?? NowPlayingCollectionViewCell()
@@ -70,12 +74,12 @@ extension FeaturedViewController: UICollectionViewDataSource {
         
         let movie = upcomingMovies[indexPath.item]
         
-        cell?.setup(title: movie.title, image: UIImage(), date: movie.releaseDate)
+        cell?.setup(title: movie.title, image: UIImage(), date: movie.releaseDate!)
         
         Task {
             let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
             let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
-            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate)
+            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
         }
         
         return cell ?? UpcomingCollectionViewCell()
