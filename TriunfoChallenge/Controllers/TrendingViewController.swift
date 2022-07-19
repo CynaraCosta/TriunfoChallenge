@@ -12,6 +12,8 @@ class TrendingViewController: UIViewController {
     let todayMovies: [Movie] = Movie.trendingTodayMovies()
     let thisWeekMovies: [Movie] = Movie.trendingThisWeekMovies()
     
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackground()
