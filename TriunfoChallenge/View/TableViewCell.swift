@@ -8,10 +8,21 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
+    
+    static let identifier = "tableViewCell"
 
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var dateLabel: UIStackView!
     @IBOutlet var imagePost: UIImageView!
+    @IBOutlet var dateLabel: UILabel!
+    
+    func setup(title: String, image: UIImage, date: String){
+        titleLabel.text = title
+        imagePost.image = image
+        let year: String = String(date.prefix(4))
+        dateLabel.text = year
+        imagePost.layer.cornerRadius = 4
+        imagePost.layer.masksToBounds = true
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

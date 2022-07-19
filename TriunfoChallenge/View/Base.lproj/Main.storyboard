@@ -292,7 +292,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="uFY-Ky-coE">
                                                                             <rect key="frame" x="8" y="271.5" width="184" height="19.5"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Luca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dky-fb-bZJ">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Luca" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="dky-fb-bZJ">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="40.5" height="19.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -380,20 +380,23 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yrs-vM-hQM">
                                 <rect key="frame" x="20" y="171" width="374" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="purple3"/>
                                 <segments>
                                     <segment title="Today"/>
                                     <segment title="This Week"/>
                                 </segments>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="didChangeSegment:" destination="4Sq-Bf-ZXw" eventType="valueChanged" id="qkY-II-ia6"/>
+                                </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-O7-5vi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-O7-5vi">
                                 <rect key="frame" x="20" y="218" width="374" height="595"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="ymx-TU-drl" customClass="TableViewCell" customModule="TriunfoChallenge" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="114" id="ymx-TU-drl" customClass="TableViewCell" customModule="TriunfoChallenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ymx-TU-drl" id="pxZ-nX-Aeh">
@@ -412,7 +415,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgU-SA-brn">
                                                             <rect key="frame" x="0.0" y="0.0" width="262" height="19"/>
                                                             <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="16"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="O8e-Ur-hLm">
@@ -439,8 +442,9 @@
                                                 <constraint firstItem="BCH-Sk-16M" firstAttribute="top" secondItem="pxZ-nX-Aeh" secondAttribute="topMargin" constant="12" id="yI4-zI-rYp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="dateLabel" destination="O8e-Ur-hLm" id="hVD-7D-MHc"/>
+                                            <outlet property="dateLabel" destination="dHQ-Xf-PDV" id="qAb-nt-GPV"/>
                                             <outlet property="imagePost" destination="QHC-Ub-thj" id="bsM-rt-fJX"/>
                                             <outlet property="titleLabel" destination="GgU-SA-brn" id="fWZ-nH-vdb"/>
                                         </connections>
@@ -454,12 +458,14 @@
                     <navigationItem key="navigationItem" title="Trending" id="7dt-10-J8U"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="segmentedControlView" destination="yrs-vM-hQM" id="8jE-4r-t4F"/>
                         <outlet property="tableView" destination="QUh-O7-5vi" id="NM1-Lf-KWu"/>
+                        <segue destination="m7t-hg-iFJ" kind="show" identifier="detailsSegue" id="l6f-eP-Hvz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hf8-6N-0u9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444.92753623188412" y="1166.5178571428571"/>
+            <point key="canvasLocation" x="1859" y="1167"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="hIv-Vl-1gW">
@@ -780,6 +786,9 @@
             <point key="canvasLocation" x="692.75362318840587" y="-638.16964285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="l6f-eP-Hvz"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="film" catalog="system" width="128" height="93"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
@@ -787,6 +796,9 @@
         <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="purple3">
+            <color red="0.22400000691413879" green="0.13300000131130219" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="secondBlack">
             <color red="0.039000000804662704" green="0.030999999493360519" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

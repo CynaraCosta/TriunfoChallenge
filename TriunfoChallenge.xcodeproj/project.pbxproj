@@ -17,6 +17,8 @@
 		A455063A28819D9100AC3FE2 /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455063928819D9100AC3FE2 /* Movie+API.swift */; };
 		A455063C2881AE8700AC3FE2 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455063B2881AE8700AC3FE2 /* MovieResponse.swift */; };
 		A455063E2885ACD300AC3FE2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455063D2885ACD300AC3FE2 /* TableViewCell.swift */; };
+		A45506402886E08A00AC3FE2 /* TrendingUIViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A455063F2886E08A00AC3FE2 /* TrendingUIViewController+UITableViewDataSource.swift */; };
+		A45506422886E0EC00AC3FE2 /* TableUIViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45506412886E0EC00AC3FE2 /* TableUIViewController+UITableViewDelegate.swift */; };
 		A4ED4CCD28731C9000481812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCC28731C9000481812 /* AppDelegate.swift */; };
 		A4ED4CCF28731C9000481812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CCE28731C9000481812 /* SceneDelegate.swift */; };
 		A4ED4CD128731C9000481812 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4CD028731C9000481812 /* FeaturedViewController.swift */; };
@@ -50,6 +52,8 @@
 		A455063928819D9100AC3FE2 /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+API.swift"; path = "../../../../Downloads/Movie+API.swift"; sourceTree = "<group>"; };
 		A455063B2881AE8700AC3FE2 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		A455063D2885ACD300AC3FE2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A455063F2886E08A00AC3FE2 /* TrendingUIViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingUIViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		A45506412886E0EC00AC3FE2 /* TableUIViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableUIViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		A4ED4CC928731C9000481812 /* TriunfoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriunfoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ED4CCC28731C9000481812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4ED4CCE28731C9000481812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		A4ED4CC028731C9000481812 = {
 			isa = PBXGroup;
 			children = (
+				A45506412886E0EC00AC3FE2 /* TableUIViewController+UITableViewDelegate.swift */,
 				A4ED4CCB28731C9000481812 /* TriunfoChallenge */,
 				A4ED4CCA28731C9000481812 /* Products */,
 			);
@@ -122,6 +127,7 @@
 				A4ED4D3E287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift */,
 				A455062B287EF20500AC3FE2 /* DetailsViewController.swift */,
 				A455062D287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift */,
+				A455063F2886E08A00AC3FE2 /* TrendingUIViewController+UITableViewDataSource.swift */,
 				A455062F28809FFD00AC3FE2 /* TrendingViewController.swift */,
 				A45506312880A0FE00AC3FE2 /* SearchViewController.swift */,
 				A45506332880A15000AC3FE2 /* UIViewController+Background.swift */,
@@ -262,6 +268,7 @@
 				A4ED4D37287DA4B000481812 /* Movie+Upcoming.swift in Sources */,
 				A45506322880A0FE00AC3FE2 /* SearchViewController.swift in Sources */,
 				A4ED4D3A287DA4B000481812 /* Movie+TrendingToday.swift in Sources */,
+				A45506402886E08A00AC3FE2 /* TrendingUIViewController+UITableViewDataSource.swift in Sources */,
 				A4ED4D3B287DA4B000481812 /* Movie+Popular.swift in Sources */,
 				A4ED4D3F287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
 				A4ED4D25287C456600481812 /* PopularCollectionViewCell.swift in Sources */,
@@ -271,6 +278,7 @@
 				A455063E2885ACD300AC3FE2 /* TableViewCell.swift in Sources */,
 				A4ED4D30287D95FA00481812 /* Movie.swift in Sources */,
 				A4ED4D38287DA4B000481812 /* Movie+NowPlaying.swift in Sources */,
+				A45506422886E0EC00AC3FE2 /* TableUIViewController+UITableViewDelegate.swift in Sources */,
 				A4ED4D27287C466D00481812 /* NowPlayingCollectionViewCell.swift in Sources */,
 				A455062E287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				A455062C287EF20500AC3FE2 /* DetailsViewController.swift in Sources */,
