@@ -666,9 +666,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="2B9-Xf-mqq">
-                                <rect key="frame" x="20" y="163" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="2B9-Xf-mqq">
+                                <rect key="frame" x="20" y="168" width="374" height="34"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -736,6 +735,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e11-P9-qyX"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2B9-Xf-mqq" firstAttribute="leading" secondItem="e11-P9-qyX" secondAttribute="leading" constant="20" id="HV7-Nf-swM"/>
+                            <constraint firstItem="e11-P9-qyX" firstAttribute="trailing" secondItem="2B9-Xf-mqq" secondAttribute="trailing" constant="20" id="TRl-tz-8tJ"/>
+                            <constraint firstItem="2B9-Xf-mqq" firstAttribute="top" secondItem="e11-P9-qyX" secondAttribute="top" constant="16" id="ozm-Lh-CKP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="nq6-ep-QAc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
