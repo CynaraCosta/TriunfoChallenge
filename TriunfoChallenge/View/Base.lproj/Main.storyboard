@@ -377,8 +377,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yrs-vM-hQM">
-                                <rect key="frame" x="20" y="168" width="374" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yrs-vM-hQM">
+                                <rect key="frame" x="20" y="171" width="374" height="32"/>
                                 <color key="backgroundColor" name="purple3"/>
                                 <segments>
                                     <segment title="Today"/>
@@ -390,8 +390,9 @@
                                     <action selector="didChangeSegment:" destination="4Sq-Bf-ZXw" eventType="valueChanged" id="qkY-II-ia6"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-O7-5vi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-O7-5vi">
                                 <rect key="frame" x="20" y="218" width="374" height="595"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="114" id="ymx-TU-drl" customClass="TableViewCell" customModule="TriunfoChallenge" customModuleProvider="target">
@@ -401,26 +402,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="114"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-Ub-thj">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-Ub-thj">
                                                     <rect key="frame" x="16" y="12" width="60" height="90"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="QHC-Ub-thj" secondAttribute="height" multiplier="2:3" id="aPj-tK-Utd"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BCH-Sk-16M">
-                                                    <rect key="frame" x="-16" y="23" width="0.0" height="68"/>
+                                                    <rect key="frame" x="92" y="23" width="262" height="68"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgU-SA-brn">
-                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="19"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="262" height="19"/>
                                                             <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="O8e-Ur-hLm">
-                                                            <rect key="frame" x="0.0" y="27" width="0.0" height="41"/>
+                                                            <rect key="frame" x="0.0" y="27" width="262" height="41"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="&lt;dateLabel&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHQ-Xf-PDV">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="19"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="262" height="19"/>
                                                                     <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="16"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -453,7 +454,6 @@
                         <viewLayoutGuide key="safeArea" id="L2e-Jl-NlC"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QUh-O7-5vi" firstAttribute="top" secondItem="yrs-vM-hQM" secondAttribute="bottom" constant="16" id="H9N-Tr-rbi"/>
                             <constraint firstItem="yrs-vM-hQM" firstAttribute="top" secondItem="L2e-Jl-NlC" secondAttribute="top" constant="16" id="JCO-Zk-2aE"/>
                             <constraint firstItem="L2e-Jl-NlC" firstAttribute="trailing" secondItem="yrs-vM-hQM" secondAttribute="trailing" constant="20" id="XSx-Xy-23h"/>
                             <constraint firstItem="yrs-vM-hQM" firstAttribute="leading" secondItem="L2e-Jl-NlC" secondAttribute="leading" constant="20" id="lXq-Y4-KLF"/>
