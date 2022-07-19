@@ -10,7 +10,7 @@ import Foundation
 struct Movie: Codable {
     
     let title: String
-    let posterPath: String
+    let posterPath: String?
     let backdropPath: String?
     let voteAverage: Float
     let releaseDate: String?

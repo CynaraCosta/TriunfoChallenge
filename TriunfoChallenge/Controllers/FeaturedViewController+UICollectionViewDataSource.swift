@@ -59,9 +59,14 @@ extension FeaturedViewController: UICollectionViewDataSource {
         cell?.setup(title: movie.title, image: UIImage(), date: movie.releaseDate!)
         
         Task {
-            let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
-            let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
-            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
+            if let posterDesemp = movie.posterPath {
+                let imageDate = await Movie.dowloadImageData(withPath: posterDesemp)
+                let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
+                cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
+            }
+//            let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
+//            let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
+//            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
         }
         
         return cell ?? NowPlayingCollectionViewCell()
@@ -77,9 +82,14 @@ extension FeaturedViewController: UICollectionViewDataSource {
         cell?.setup(title: movie.title, image: UIImage(), date: movie.releaseDate!)
         
         Task {
-            let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
-            let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
-            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
+            if let posterDesemp = movie.posterPath {
+                let imageDate = await Movie.dowloadImageData(withPath: posterDesemp)
+                let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
+                cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
+            }
+//            let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
+//            let imagem: UIImage = UIImage(data: imageDate) ?? UIImage()
+//            cell?.setup(title: movie.title, image: imagem, date: movie.releaseDate!)
         }
         
         return cell ?? UpcomingCollectionViewCell()

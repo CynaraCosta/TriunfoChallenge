@@ -35,24 +35,38 @@ class DetailsViewController: UIViewController {
             self.backdropImage.image = UIImage()
         }
         
+        if let posterDesemp = movie.posterPath {
+            self.posterImage.image = UIImage(named: posterDesemp)
+        } else {
+            self.posterImage.image = UIImage()
+        }
+        
         self.titleLabel.text = movie.title
         self.ratingLabel.text = "Rating: \(movie.voteAverage)/10"
-        self.posterImage.image = UIImage(named: movie.posterPath)
+        //self.posterImage.image = UIImage(named: movie.posterPath)
         self.overviewLabel.text = movie.overview
         
         Task {
             
             if let backdropDesemp = movie.backdropPath {
-                let backdropURL = await Movie.dowloadImageData(withPath: movie.backdropPath!)
+                let backdropURL = await Movie.dowloadImageData(withPath: backdropDesemp)
                 let backdrop = UIImage(data: backdropURL) ?? UIImage()
                 self.backdropImage.image = backdrop
             } else {
                 self.backdropImage.image = UIImage()
             }
             
-            let posterURL = await Movie.dowloadImageData(withPath: movie.posterPath)
-            let poster = UIImage(data: posterURL) ?? UIImage()
-            self.posterImage.image = poster
+            if let posterDesemp = movie.posterPath {
+                let posterURL = await Movie.dowloadImageData(withPath: posterDesemp)
+                let poster = UIImage(data: posterURL) ?? UIImage()
+                self.posterImage.image = poster
+            } else {
+                self.posterImage.image = UIImage()
+            }
+            
+//            let posterURL = await Movie.dowloadImageData(withPath: movie.posterPath)
+//            let poster = UIImage(data: posterURL) ?? UIImage()
+//            self.posterImage.image = poster
             
         }
     }

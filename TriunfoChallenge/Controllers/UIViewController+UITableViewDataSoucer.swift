@@ -22,12 +22,23 @@ extension SearchViewController: UITableViewDataSource {
         cell?.selectionStyle = UITableViewCell.SelectionStyle.none
         let movie = searchedMovies[indexPath.item]
         
-        cell?.setup(title: movie.title, image: UIImage(named: movie.posterPath) ?? UIImage(), date: movie.releaseDate!)
+        if let posterDesemp = movie.posterPath {
+            let image = UIImage(named: posterDesemp) ?? UIImage()
+            cell?.setup(title: movie.title, image: image, date: movie.releaseDate!)
+
+        }
+        
+//        cell?.setup(title: movie.title, image: UIImage(named: movie.posterPath) ?? UIImage(), date: movie.releaseDate!)
 
         Task {
-            let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
-            let image: UIImage = UIImage(data: imageDate) ?? UIImage()
-            cell?.setup(title: movie.title, image: image, date: movie.releaseDate!)
+            if let posterDesemp = movie.posterPath {
+                let imageDate = await Movie.dowloadImageData(withPath: posterDesemp)
+                let image: UIImage = UIImage(data: imageDate) ?? UIImage()
+                cell?.setup(title: movie.title, image: image, date: movie.releaseDate!)
+            }
+//            let imageDate = await Movie.dowloadImageData(withPath: movie.posterPath)
+//            let image: UIImage = UIImage(data: imageDate) ?? UIImage()
+//            cell?.setup(title: movie.title, image: image, date: movie.releaseDate!)
         }
         return cell ?? TableViewCell()
     }
