@@ -30,11 +30,6 @@
 		A4ED4D25287C456600481812 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D24287C456600481812 /* PopularCollectionViewCell.swift */; };
 		A4ED4D27287C466D00481812 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D26287C466D00481812 /* NowPlayingCollectionViewCell.swift */; };
 		A4ED4D30287D95FA00481812 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D2F287D95FA00481812 /* Movie.swift */; };
-		A4ED4D37287DA4B000481812 /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D32287DA4B000481812 /* Movie+Upcoming.swift */; };
-		A4ED4D38287DA4B000481812 /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D33287DA4B000481812 /* Movie+NowPlaying.swift */; };
-		A4ED4D39287DA4B000481812 /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D34287DA4B000481812 /* Movie+TrendingThisWeek.swift */; };
-		A4ED4D3A287DA4B000481812 /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D35287DA4B000481812 /* Movie+TrendingToday.swift */; };
-		A4ED4D3B287DA4B000481812 /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D36287DA4B000481812 /* Movie+Popular.swift */; };
 		A4ED4D3D287DBE3300481812 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D3C287DBE3300481812 /* UpcomingCollectionViewCell.swift */; };
 		A4ED4D3F287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ED4D3E287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift */; };
 		A4ED4D52287DF42E00481812 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4ED4D4E287DF42E00481812 /* Oswald-Medium.ttf */; };
@@ -69,11 +64,6 @@
 		A4ED4D24287C456600481812 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4ED4D26287C466D00481812 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4ED4D2F287D95FA00481812 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		A4ED4D32287DA4B000481812 /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
-		A4ED4D33287DA4B000481812 /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
-		A4ED4D34287DA4B000481812 /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
-		A4ED4D35287DA4B000481812 /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
-		A4ED4D36287DA4B000481812 /* Movie+Popular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
 		A4ED4D3C287DBE3300481812 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4ED4D3E287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		A4ED4D4E287DF42E00481812 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
@@ -168,11 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				A455063928819D9100AC3FE2 /* Movie+API.swift */,
-				A4ED4D33287DA4B000481812 /* Movie+NowPlaying.swift */,
-				A4ED4D36287DA4B000481812 /* Movie+Popular.swift */,
-				A4ED4D34287DA4B000481812 /* Movie+TrendingThisWeek.swift */,
-				A4ED4D35287DA4B000481812 /* Movie+TrendingToday.swift */,
-				A4ED4D32287DA4B000481812 /* Movie+Upcoming.swift */,
 				A4ED4D2F287D95FA00481812 /* Movie.swift */,
 				A455063B2881AE8700AC3FE2 /* MovieResponse.swift */,
 			);
@@ -271,20 +256,15 @@
 				A4ED4D3D287DBE3300481812 /* UpcomingCollectionViewCell.swift in Sources */,
 				A455063C2881AE8700AC3FE2 /* MovieResponse.swift in Sources */,
 				A455063028809FFD00AC3FE2 /* TrendingViewController.swift in Sources */,
-				A4ED4D37287DA4B000481812 /* Movie+Upcoming.swift in Sources */,
 				A45506322880A0FE00AC3FE2 /* SearchViewController.swift in Sources */,
-				A4ED4D3A287DA4B000481812 /* Movie+TrendingToday.swift in Sources */,
 				A45506402886E08A00AC3FE2 /* TrendingUIViewController+UITableViewDataSource.swift in Sources */,
 				A45506462887187100AC3FE2 /* UIViewController+UITableViewDataSoucer.swift in Sources */,
-				A4ED4D3B287DA4B000481812 /* Movie+Popular.swift in Sources */,
 				A4ED4D3F287DC15A00481812 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
 				A4ED4D25287C456600481812 /* PopularCollectionViewCell.swift in Sources */,
 				A45506342880A15000AC3FE2 /* UIViewController+Background.swift in Sources */,
 				A4ED4CD128731C9000481812 /* FeaturedViewController.swift in Sources */,
-				A4ED4D39287DA4B000481812 /* Movie+TrendingThisWeek.swift in Sources */,
 				A455063E2885ACD300AC3FE2 /* TableViewCell.swift in Sources */,
 				A4ED4D30287D95FA00481812 /* Movie.swift in Sources */,
-				A4ED4D38287DA4B000481812 /* Movie+NowPlaying.swift in Sources */,
 				A45506422886E0EC00AC3FE2 /* TableUIViewController+UITableViewDelegate.swift in Sources */,
 				A4ED4D27287C466D00481812 /* NowPlayingCollectionViewCell.swift in Sources */,
 				A455062E287EF4A200AC3FE2 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
